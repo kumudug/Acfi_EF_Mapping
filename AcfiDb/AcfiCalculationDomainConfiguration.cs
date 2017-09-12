@@ -8,8 +8,9 @@ namespace AcfiDb
         public AcfiCalculationDomainConfiguration()
         {
             HasKey(t => t.AcfiCalculationDomainId);
-            Property(t => t.AcfiCalculationDomainScopeId).HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
+            Property(t => t.AcfiCalculationDomainId).HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
             HasRequired<AcfiCalculationDomainScope>(s => s.AcfiCalculationDomainScope).WithMany(s => s.AcfiCalculationDomains).HasForeignKey(x => x.AcfiCalculationDomainScopeId);
+            HasOptional(s => s.Acfi01CalculationDomain).WithRequired(s => s.AcfiCalculationDomain);
         }
     }
 }

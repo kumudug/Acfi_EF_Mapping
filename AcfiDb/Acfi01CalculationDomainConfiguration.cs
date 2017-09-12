@@ -7,7 +7,7 @@ namespace AcfiDb
         public Acfi01CalculationDomainConfiguration()
         {
             HasKey(t => t.AcfiCalculationDomainId);
-            HasRequired(s => s.AcfiCalculationDomain).WithRequiredPrincipal(s => s.Acfi01CalculationDomain);
+            //HasRequired(s => s.AcfiCalculationDomain).WithOptional(s => s.Acfi01CalculationDomain);
         }
     }
 }

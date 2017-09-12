@@ -60,9 +60,9 @@
     <Compile Include="AcfiDbContext.cs" />
     <Compile Include="AcfiRatingDomain.cs" />
     <Compile Include="AcfiRatingDomainConfiguration.cs" />
-    <Compile Include="Migrations\201709121105059_first.cs" />
-    <Compile Include="Migrations\201709121105059_first.Designer.cs">
-      <DependentUpon>201709121105059_first.cs</DependentUpon>
+    <Compile Include="Migrations\201709122347358_inital_create.cs" />
+    <Compile Include="Migrations\201709122347358_inital_create.Designer.cs">
+      <DependentUpon>201709122347358_inital_create.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -74,8 +74,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201709121105059_first.resx">
-      <DependentUpon>201709121105059_first.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201709122347358_inital_create.resx">
+      <DependentUpon>201709122347358_inital_create.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

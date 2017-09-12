@@ -7,13 +7,13 @@ namespace AcfiDb.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class first : IMigrationMetadata
+    public sealed partial class inital_create : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(first));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(inital_create));
         
         string IMigrationMetadata.Id
         {
-            get { return "201709121105059_first"; }
+            get { return "201709122347358_inital_create"; }
         }
         
         string IMigrationMetadata.Source
